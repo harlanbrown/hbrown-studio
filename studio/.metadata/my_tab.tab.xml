@@ -1,0 +1,62 @@
+<tab id="my_tab" version="1.2">
+  <action>
+    <category>VIEW_ACTION_LIST</category>
+    <label>my_tab</label>
+    <order>0</order>
+    <immediate>false</immediate>
+    <rules>
+      <rules>
+        <org.nuxeo.studio.client.modules.action.RuleModel>
+          <key>hasType</key>
+          <operator>==</operator>
+          <value>File</value>
+        </org.nuxeo.studio.client.modules.action.RuleModel>
+      </rules>
+    </rules>
+  </action>
+  <layout class="simple-layout">
+    <mode>summary</mode>
+    <rows>
+      <grid-layout-row>
+        <widgets>
+          <grid-widget>
+            <translated>false</translated>
+            <properties class="linked-hash-map"/>
+            <multiValued>false</multiValued>
+            <readOnly>false</readOnly>
+            <colSpan>1</colSpan>
+            <subWidgets>
+              <generic-widget>
+                <type>template</type>
+                <label>Template</label>
+                <helpLabel></helpLabel>
+                <translated>false</translated>
+                <properties class="linked-hash-map">
+                  <entry>
+                    <string>view</string>
+                    <map>
+                      <entry>
+                        <string>template</string>
+                        <string>/widgets/mytemplate.xhtml</string>
+                      </entry>
+                    </map>
+                  </entry>
+                </properties>
+                <multiValued>false</multiValued>
+                <readOnly>false</readOnly>
+                <modeExpression></modeExpression>
+                <colSpan>1</colSpan>
+                <addSurroundingForm>false</addSurroundingForm>
+                <handleLabels>false</handleLabels>
+                <typeEditable>false</typeEditable>
+                <fieldDefinitions/>
+              </generic-widget>
+            </subWidgets>
+          </grid-widget>
+        </widgets>
+        <scheme>ONE</scheme>
+      </grid-layout-row>
+    </rows>
+    <scaffolded>false</scaffolded>
+  </layout>
+</tab>

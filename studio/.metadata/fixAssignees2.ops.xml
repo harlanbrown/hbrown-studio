@@ -1,0 +1,44 @@
+<operation-chain id="fixAssignees2" version="1.2">
+  <chain type="Default">
+    <doc></doc>
+    <inputParams/>
+    <operations>
+      <operation id="Document.FetchByProperty">
+        <params>
+          <param name="property" type="string">
+            <value>docri:participatingDocuments</value>
+          </param>
+          <param name="values" type="stringlist">
+            <value>@{Document.id}</value>
+          </param>
+          <param name="query" type="string">
+            <value>ecm:primaryType = &apos;DocumentRoute&apos;</value>
+          </param>
+        </params>
+      </operation>
+      <operation id="Document.FetchByProperty">
+        <params>
+          <param name="property" type="string">
+            <value>ecm:parentId</value>
+          </param>
+          <param name="values" type="stringlist">
+            <value>@{Document.id}</value>
+          </param>
+          <param name="query" type="string">
+            <value>ecm:primaryType = &apos;RouteNode&apos; AND rnode:nodeId = &apos;Taskb651&apos;</value>
+          </param>
+        </params>
+      </operation>
+      <operation id="Document.RemoveProperty">
+        <params>
+          <param name="xpath" type="string">
+            <value>rnode:taskAssigneesExpr</value>
+          </param>
+          <param name="save" type="boolean">
+            <value>true</value>
+          </param>
+        </params>
+      </operation>
+    </operations>
+  </chain>
+</operation-chain>

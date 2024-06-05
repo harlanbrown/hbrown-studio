@@ -1,0 +1,19 @@
+<scriptedOperation id="test" version="1.2">
+  <script>function run(input, params) {
+  var values = &quot;Administrator&quot;;
+  var products = Document.FetchByProperty(
+    null, {
+      &apos;property&apos;: &apos;dc:creator&apos;,
+      &apos;values&apos;: values
+    }
+  );
+  Log(null,{level:&quot;error&quot;,
+            message:products.toString()});
+}
+</script>
+  <description></description>
+  <inputType>void</inputType>
+  <outputType>void</outputType>
+  <category>javascript</category>
+  <disableHelperComments>true</disableHelperComments>
+</scriptedOperation>

@@ -1,0 +1,10 @@
+<div xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:c="http://java.sun.com/jstl/core">
+    <table>
+        <c:forEach id="list" items="#{currentDocument.myschema.myfield}" var="item" varStatus="counter">
+        <tr>
+            <td><a href="#{item}">#{item}</a></td>
+        </tr>
+        </c:forEach>
+    </table>
+</div>

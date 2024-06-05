@@ -1,0 +1,20 @@
+<document-schema id="myschema" version="1.2">
+  <schema>
+    <id>myschema</id>
+    <prefix>my</prefix>
+    <fields class="linked-hash-map">
+      <entry>
+        <string>myfield</string>
+        <field>
+          <id>myfield</id>
+          <type>string</type>
+          <isMultiValue>true</isMultiValue>
+          <defaultValue>[]</defaultValue>
+        </field>
+      </entry>
+    </fields>
+  </schema>
+  <mode>DEFAULT</mode>
+  <enableVCSPreChecks>true</enableVCSPreChecks>
+  <allowNestedComplexTypes>false</allowNestedComplexTypes>
+</document-schema>

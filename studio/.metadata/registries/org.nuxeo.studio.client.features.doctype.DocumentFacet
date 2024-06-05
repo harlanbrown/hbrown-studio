@@ -1,0 +1,9 @@
+{
+  "facets": [
+    {
+        "id": "NotFulltextIndexable",
+        "label": "NotFulltextIndexable",
+        "description": "Do not index this document type for fulltext"
+      }
+  ]
+}
