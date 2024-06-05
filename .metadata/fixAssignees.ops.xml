@@ -1,0 +1,77 @@
+<operation-chain id="fixAssignees" version="1.2">
+  <chain type="Default">
+    <doc></doc>
+    <inputParams/>
+    <operations>
+      <operation id="Repository.Query">
+        <params>
+          <param name="currentPageIndex" type="integer">
+            <value></value>
+          </param>
+          <param name="language" type="string">
+            <value>NXQL</value>
+          </param>
+          <param name="maxResults" type="integer">
+            <value></value>
+          </param>
+          <param name="namedParameters" type="properties">
+            <value></value>
+          </param>
+          <param name="pageSize" type="integer">
+            <value></value>
+          </param>
+          <param name="query" type="string">
+            <value>select * from Technical_Intelligence where ecm:currentLifeCycleState = &apos;draft&apos; and ecm:isVersion = 0</value>
+          </param>
+          <param name="queryParams" type="stringlist">
+            <value></value>
+          </param>
+          <param name="sortBy" type="stringlist">
+            <value></value>
+          </param>
+          <param name="sortOrder" type="stringlist">
+            <value>ASC</value>
+          </param>
+        </params>
+      </operation>
+      <operation id="Context.SetVar">
+        <params>
+          <param name="name" type="string">
+            <value>queryResultsList</value>
+          </param>
+          <param name="value" type="object">
+            <value>@{This}</value>
+          </param>
+        </params>
+      </operation>
+      <operation id="RunOperationOnList">
+        <params>
+          <param name="id" type="string">
+            <value>fixAssignees2</value>
+          </param>
+          <param name="list" type="string">
+            <value>queryResultsList</value>
+          </param>
+          <param name="isolate" type="boolean">
+            <value>true</value>
+          </param>
+          <param name="item" type="string">
+            <value>item</value>
+          </param>
+          <param name="newTx" type="boolean">
+            <value>false</value>
+          </param>
+          <param name="parameters" type="properties">
+            <value></value>
+          </param>
+          <param name="rollbackGlobalOnError" type="boolean">
+            <value>true</value>
+          </param>
+          <param name="timeout" type="integer">
+            <value></value>
+          </param>
+        </params>
+      </operation>
+    </operations>
+  </chain>
+</operation-chain>

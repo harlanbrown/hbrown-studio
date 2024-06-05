@@ -1,0 +1,17 @@
+<xml-extension id="MYPP" version="1.2">
+  <xml>  &lt;extension target=&quot;org.nuxeo.ecm.platform.query.api.PageProviderService&quot;
+    point=&quot;providers&quot;&gt;
+
+    &lt;coreQueryPageProvider name=&quot;MYPP&quot;&gt;
+      &lt;pattern quoteParameters=&quot;false&quot; escapeParameters=&quot;true&quot;&gt;
+        SELECT * FROM Picture WHERE dc:title LIKE &apos;?%&apos; AND ecm:mixinType !=
+        &apos;HiddenInNavigation&apos; AND ecm:isVersion = 0 AND
+        ecm:isTrashed = 0
+      &lt;/pattern&gt;
+      &lt;!-- sort column=&quot;dc:title&quot; ascending=&quot;true&quot; / sort by fulltext relevance --&gt;
+      &lt;pageSize&gt;5&lt;/pageSize&gt;
+    &lt;/coreQueryPageProvider&gt;
+
+  &lt;/extension&gt;
+</xml>
+</xml-extension>

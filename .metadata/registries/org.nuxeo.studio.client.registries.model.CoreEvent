@@ -1,0 +1,5 @@
+{
+  "events": {
+    "afterWorkflowTaskEnded": "After workflow task ended"
+  }
+}

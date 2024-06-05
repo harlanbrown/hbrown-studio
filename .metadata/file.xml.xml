@@ -1,0 +1,8 @@
+<xml-extension id="file" version="1.2">
+  <xml>&lt;extension target=&quot;org.nuxeo.ecm.core.schema.TypeService&quot; point=&quot;doctype&quot;&gt;
+  &lt;doctype name=&quot;File&quot; append=&quot;true&quot;&gt;
+    &lt;schema name=&quot;myschema&quot;/&gt;
+  &lt;/doctype&gt;
+&lt;/extension&gt;
+</xml>
+</xml-extension>

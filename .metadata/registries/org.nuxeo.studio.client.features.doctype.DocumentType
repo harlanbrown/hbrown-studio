@@ -1,0 +1,22 @@
+{
+  "doctypes": {
+    "MyFile": {
+      "parent": "Document",
+      "schemas": ["common", "dublincore", "file", "uid", "files"],
+      "facets": ["Versionable", "Publishable", "Commentable", "Indexable", "Downloadable"],
+      "subtypes": [],
+      "actions": ["TAB_VIEW", "TAB_EDIT", "TAB_FILES_EDIT", "TAB_PUBLISH", "TAB_RELATIONS",
+      "TAB_CONTENT_JBPM", "TAB_MY_SUBSCRIPTIONS", "view_comments",
+      "TAB_CONTENT_HISTORY", "TAB_PREVIEW", "TAB_MANAGE"]
+    },
+    "MyNote": {
+      "parent": "Document",
+      "schemas": ["common", "dublincore", "note", "uid", "files"],
+      "facets": ["Versionable", "Publishable", "Commentable","NotFulltextIndexable"],
+      "subtypes": [],
+      "actions": ["TAB_VIEW", "TAB_EDIT", "TAB_FILES_EDIT", "TAB_PUBLISH", "TAB_RELATIONS",
+      "TAB_CONTENT_JBPM", "TAB_MY_SUBSCRIPTIONS", "view_comments",
+      "TAB_CONTENT_HISTORY", "TAB_PREVIEW", "TAB_MANAGE"]
+    }
+  }
+}
