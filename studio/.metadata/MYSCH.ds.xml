@@ -1,0 +1,10 @@
+<document-schema id="MYSCH" version="1.2">
+  <schema>
+    <id>MYSCH</id>
+    <prefix>SCH</prefix>
+    <fields class="linked-hash-map"/>
+  </schema>
+  <mode>DEFAULT</mode>
+  <enableVCSPreChecks>true</enableVCSPreChecks>
+  <allowNestedComplexTypes>false</allowNestedComplexTypes>
+</document-schema>
