@@ -3,7 +3,16 @@
     <schema>
       <id>MYDOC</id>
       <prefix>MYD</prefix>
-      <fields class="linked-hash-map"/>
+      <fields class="linked-hash-map">
+        <entry>
+          <string>StrFLD1</string>
+          <field>
+            <id>StrFLD1</id>
+            <type>string</type>
+            <isMultiValue>false</isMultiValue>
+          </field>
+        </entry>
+      </fields>
     </schema>
     <label>mydoc</label>
     <category></category>
