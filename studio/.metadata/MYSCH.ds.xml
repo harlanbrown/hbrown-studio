@@ -2,7 +2,16 @@
   <schema>
     <id>MYSCH</id>
     <prefix>SCH</prefix>
-    <fields class="linked-hash-map"/>
+    <fields class="linked-hash-map">
+      <entry>
+        <string>fieldOneStr</string>
+        <field>
+          <id>fieldOneStr</id>
+          <type>string</type>
+          <isMultiValue>false</isMultiValue>
+        </field>
+      </entry>
+    </fields>
   </schema>
   <mode>DEFAULT</mode>
   <enableVCSPreChecks>true</enableVCSPreChecks>
