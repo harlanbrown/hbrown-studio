@@ -1,11 +1,7 @@
 <application>
   <targetPlatform>
-    <version>server-10.10</version>
+    <version>lts-2021.0</version>
     <packages/>
   </targetPlatform>
-  <dependencies>
-    <string>nuxeo-jsf-ui:10.10.0</string>
-    <string>nuxeo-web-ui:2.4.0</string>
-    <string>nuxeo-dam:6.4.3</string>
-  </dependencies>
+  <dependencies class="linked-hash-set"/>
 </application>
